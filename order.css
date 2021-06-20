@@ -1,0 +1,84 @@
+*{
+	margin: 0; padding: 0;box-sizing: border-box;
+	font-family:'Josefin Sans',sans-serif;
+	
+}
+
+ header{
+	 width: 100%;
+	 height: 300vh;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+ }
+ 
+ nav{
+	 width: 100%; height: 15vh;
+	 background: rgba(0,0,0,0.2);
+	 color: white;display: flex; justify-content: space-between;
+	 align-items: center; text-transform: uppercase;
+ }
+
+/*Table design*/
+table{
+height:600px;
+width :800px;
+position:relative;
+border:5pt solid #9c989c;
+left:350px;
+padding:5pt;
+}	
+
+h1 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+}
+/*Table header design*/
+th {
+	background-color:#a13e70;
+	font-family: sans-serif;
+	font-size: 20px;
+	color: white;
+}
+/*Table inside*/		
+td{
+	background-color:white;
+}
+
+/*FOrm click design*/
+input:focus{
+	background-color:#dddddd;
+}
+
+textarea, input{
+	height:40px;
+	width:620px;
+}
+
+/*submit order button*/
+input[type=submit] {
+	font-family: sans-serif;
+	font-size: 15px;
+	padding: 10px 10px;
+	background-color: rgb(100, 150, 214);
+	color: rgb(128, 20, 128);
+	border-radius: 12px;
+}
+
+/*Reset order Button*/
+input[type=reset] {
+	font-family: sans-serif;
+	font-size: 15px;
+	padding: 10px 10px;
+	background-color: rgb(100, 150, 214);
+	color: white;
+	border-radius: 12px;
+}
+
+/*Submit hover*/
+input[type=submit]:hover{
+	background-color:#1d52b3;
+}
+/*Reset hover*/
+input[type=reset]:hover{
+	background-color:#f7a73f;
+}

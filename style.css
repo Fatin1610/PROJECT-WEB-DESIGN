@@ -1,0 +1,44 @@
+.menu_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color :rgba(125, 188, 204, 0.582);
+    }
+
+    .menu_ul li {
+    float:left;
+    font-style: normal;
+    ;
+    }
+
+    .menu_ul li a {
+    display: block;
+    color:rgb(15, 15, 15);
+    text-align: center;
+    font-size: large;
+    padding: 14px 40px;
+    text-decoration: none;
+    }
+
+    .menu_ul li a:hover {
+    background-color:rgb(221, 212, 212);
+    }
+
+table {
+    text-align: center;
+    
+}
+.text-center {
+    text-align: center;
+  }
+   
+      .button1 {background-color: #4CAF50;} /* Submit */
+      .button2 {background-color: #008CBA;} /* Cancel */
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }

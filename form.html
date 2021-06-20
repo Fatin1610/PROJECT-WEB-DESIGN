@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER FORM</title>
+    <script src="order.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="order.css">
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+    <script src="jquery-1.10.0.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<h1 style=" text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Make your order here. Thank you.</h1>
+
+<ul class="menu_ul">
+    <ul class="menu_ul li">
+        <ul class="menu_ul a">
+            <ul class="menu_ul a:hover">
+
+                <li menu="menu_ul"><a href="home.html" target="location">Home</a></li>
+                <li menu="menu_ul"><a href="gallery.html" target="location">Product</a></li>
+                <li menu="menu_ul"><a href="form.html" target="location">Order Form</a></li>
+                <li menu="menu_ul"><a href="contact.html" target="location">Contact Us</a></li>
+            </ul>
+        </ul>
+    </ul>
+</ul>
+
+<center>
+    <br>
+    <h4>‘The online grocery shopping revolution’, is a preparation guide for grocery-chains in developed
+        countries.
+        It provides an outlook on the online grocery shopping market,
+        <br>e-grocery business models and how to prepare for the
+        future.
+        <br><br>
+        - Get the best quality products at the cheapest prices -
+    </h4>
+</center>
+</head>
+
+<body>
+    <div id="borderall">
+        <p><br><br>
+        <table border="1">
+            <form name="Myform" action="" method="post" enctype="multipart/form-data" onsubmit="return kira();">
+                <tr>
+                    <th colspan="2">SALES INFO</th>
+                </tr>
+                <tr>
+                    <td><b>Customer Name</b></td>
+                    <td> <input type="text" name="customername" id="name" placeholder="Enter name" required />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><b>Phone Number</b></td>
+                    <td> <input type="text" name="phone number" id="number" placeholder="Enter phone number" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Address</b></td>
+                    <td><textarea name="Address" id="address" placeholder="Enter address" required></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th colspan="2"><b>Item 1</b></th>
+                </tr>
+
+                <tr>
+                    <td><b>Name</b></td>
+                    <td> <input type="text" id="item1" name="name" placeholder="Item Name" required /></td>
+                </tr>
+
+                <tr>
+                    <td><b>Unit Price (RM)</b></td>
+                    <td> <input type="text" id="unitprice" name="unitprice" placeholder="Insert Unit Price" required />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><b> Quantity (kg)</b></td>
+                    <td> <input type="number" id="Quantity" placeholder="Insert Quantity" name="quantity" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Description</b></td>
+                    <td><textarea name="description" id="description1"></textarea></td>
+                </tr>
+
+                <tr>
+                    <th colspan="2"><b>Item 2</b></th>
+                </tr>
+
+                <tr>
+                    <td><b>Name</b></td>
+                    <td> <input type="text" id="item2" name="name" placeholder="Item Name" required /></td>
+                </tr>
+
+                <tr>
+                    <td><b>Unit Price (RM)</b></td>
+                    <td> <input type="text" id="unitprice2" name="unitprice" placeholder="Insert Unit Price" required />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><b>Quantity</b></td>
+                    <td> <input type="number" id="Quantity2" placeholder="Insert Quantity" name="quantity" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Description</b></td>
+                    <td><textarea name="description" id="description2"></textarea></td>
+                </tr>
+
+                <tr>
+                    <tr>
+                        <th colspan="2">
+                            <input type="submit" value="CALCULATE" onclick="kira();">
+                            <input type="reset" value="RESET">
+                        </th>
+                    </tr>
+                </tr>
+            </form>
+        </table>
+        <br><br>
+        <table border="1" width="80%">
+            <tr>
+                <th colspan="2">SALES INFO</th>
+            </tr>
+            <tr>
+                <td><b>Customer Name</b></td>
+                <td width="40%"><span id="name2"></span></td>
+            </tr>
+            <tr>
+                <td><b>Phone Number</b></td>
+                <td width="40%"><span id="number2"></span></td>
+            </tr>
+            <tr>
+                <td><b>Address</b></td>
+                <td widh="40%"><span id="address2"></span></td>
+            </tr>
+
+            <tr>
+                <th colspan="2"><b>Item 1</b></th>
+            </tr>
+
+            <tr>
+                <td><b>Name</b></td>
+                <td width="60%"><span id="items1"></span></td>
+            </tr>
+
+            <tr>
+                <td><b>Unit Price (RM)</b></td>
+                <td width="60%"><span id="unitprice3"></td>
+
+            </tr>
+
+            <tr>
+                <td><b>Quantity</b></td>
+                <td width="60%"><span id="Quantity3"></td>
+            </tr>
+            <tr>
+                <td><b>Description</b></td>
+                <td width="60%"><span id="description3"></span></td>
+            </tr>
+            <tr>
+                <td><b>Total Price (RM)</b></td>
+                <td width="60%"><span id="result"></span></td>
+            </tr>
+
+            <tr>
+                <th colspan="2"><b>Item 2</b></th>
+            </tr>
+
+            <tr>
+                <td><b>Name</b></td>
+                <td width="60%"><span id="items2"></span></td>
+            </tr>
+
+            <tr>
+                <td><b>Unit Price (RM)</b></td>
+                <td width="60%"><span id="unitprice4"></td>
+            </tr>
+            <tr>
+                <td><b>Description</b></td>
+                <td width="60%"><span id="description4"></span></td>
+            </tr>
+            <tr>
+                <td><b>Quantity</b></td>
+                <td width="60%"><span id="Quantity4"></td>
+            </tr>
+            <tr>
+                <td><b>Total Price (RM)</b></td>
+                <td width="60%"><span id="result2"></span></td>
+            </tr>
+            <tr>
+                <th colspan="2"><b>PAYMENT INFO</b></th>
+            </tr>
+            <tr>
+                <td><b>GRAND TOTAL (RM) </b></td>
+                <td width="60%"><span id="gdtotal"></td>
+            </tr>
+
+        </table>
+        <br><br><br><br>
+    </div>
+</body>
+
+</html>
